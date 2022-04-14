@@ -126,10 +126,10 @@ p {
 
 /* Région boutons */
 
-#menu1, #menu2, #menu3, #menu4, #menu5 {
+#menu2, #menu3, #menu4, #menu5, #menu6 {
     flex: 1;
     height: 50%;
-    border-right: 2px solid rgb(166, 166, 166);
+    border-left: 2px solid rgb(166, 166, 166);
     transition: all 0.5s;
 }
 
@@ -149,12 +149,11 @@ p {
     transition: all 0.5s;
 }
 
-#menu2:hover ~ div#menu1,
-#menu3:hover ~ div#menu2,
-#menu4:hover ~ div#menu3,
-#menu5:hover ~ div#menu4,
-#menu6:hover ~ div#menu5 {
-    background-color: blue;
+#menu1:hover + div#menu2,
+#menu2:hover + div#menu3,
+#menu3:hover + div#menu4,
+#menu4:hover + div#menu5,
+#menu5:hover + div#menu6 {
     height: 100%;
     transition: all 0.5s;
 }
