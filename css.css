@@ -133,7 +133,7 @@ p {
     transition: all 0.5s;
 }
 
-#menu61 {
+#menu1 {
     flex: 1;
     height: 50%;
     transition: all 0.5s;
@@ -153,8 +153,7 @@ p {
 #menu2:hover + div#menu3,
 #menu3:hover + div#menu4,
 #menu4:hover + div#menu5,
-#menu5:hover + div#menu6,
-#menu6:hover ~ div#menu5 {
+#menu5:hover + div#menu6 {
     height: 100%;
     transition: all 0.5s;
 }
