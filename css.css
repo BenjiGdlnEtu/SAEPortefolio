@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    width: 210,5vh;
+    width: 100%;
     background-color: cadetblue;
 }
 
@@ -107,7 +107,12 @@ p {
     filter: blur(1.5px);
 }
 
-#menuDiv {
+#menuDivMinSize {
+    display: none;
+    height: 0%;
+}
+
+#menuDivLargeSize {
     display: flex;
     height: 7%;
     width: 100%;
@@ -115,7 +120,7 @@ p {
     background-color: white;
 }
 
-#sousMenuResponsive1 {
+#sousMenuResponsiveLargeSize {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -124,43 +129,43 @@ p {
     align-items: center;
 }
 
-/* Région boutons */
-
-#menu2, #menu3, #menu4, #menu5, #menu6 {
+#menu2LargeSize,
+#menu3LargeSize,
+#menu4LargeSize,
+#menu5LargeSize,
+#menu6LargeSize {
     flex: 1;
     height: 50%;
     border-left: 2px solid rgb(166, 166, 166);
     transition: all 0.5s;
 }
 
-#menu1 {
+#menu1LargeSize {
     flex: 1;
     height: 50%;
     transition: all 0.5s;
 }
 
-#menu1:hover,
-#menu2:hover,
-#menu3:hover,
-#menu4:hover,
-#menu5:hover,
-#menu6:hover {
+#menu1LargeSize:hover,
+#menu2LargeSize:hover,
+#menu3LargeSize:hover,
+#menu4LargeSize:hover,
+#menu5LargeSize:hover,
+#menu6LargeSize:hover {
     height: 100%;
     transition: all 0.5s;
 }
 
-#menu1:hover + div#menu2,
-#menu2:hover + div#menu3,
-#menu3:hover + div#menu4,
-#menu4:hover + div#menu5,
-#menu5:hover + div#menu6 {
+#menu1LargeSize:hover + #menu2LargeSize,
+#menu2LargeSize:hover + #menu3LargeSize,
+#menu3LargeSize:hover + #menu4LargeSize,
+#menu4LargeSize:hover + #menu5LargeSize,
+#menu5LargeSize:hover + #menu6LargeSize {
     height: 100%;
     transition: all 0.5s;
 }
 
-/* Fin région boutons */
-
-#titreDiv {
+#titreDivLargeSize {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,7 +173,7 @@ p {
     height: 100%;
 }
 
-#conteneurTitreDiv {
+#conteneurLargeSizeTitreDiv {
     display: flex;
     align-items:center;
     width: 100%;
@@ -176,18 +181,6 @@ p {
     justify-content: center;
     color: rgb(77, 77, 77);
 }
-
-#titreDiv2 {
-    text-align: center;
-    color: rgb(77, 77, 77);
-    transition: all 0.5s;
-}
-
-#titreDiv2:hover {
-    color: rgb(104, 104, 104);
-    transition: all 0.5s;
-}
-/* Endrégion */
 
 #menu1Cache,
 #menu2Cache,
@@ -205,12 +198,12 @@ p {
     padding: 0px;
 }
 
-#menu1:hover #menu1Cache,
-#menu2:hover #menu2Cache,
-#menu3:hover #menu3Cache,
-#menu4:hover #menu4Cache,
-#menu5:hover #menu5Cache,
-#menu6:hover #menu6Cache {
+#menu1LargeSize:hover #menu1Cache,
+#menu2LargeSize:hover #menu2Cache,
+#menu3LargeSize:hover #menu3Cache,
+#menu4LargeSize:hover #menu4Cache,
+#menu5LargeSize:hover #menu5Cache,
+#menu6LargeSize:hover #menu6Cache {
     display: block;
     opacity: 1;
     padding: 0px;
@@ -255,6 +248,16 @@ p {
         width: 100%;
     }
 
+    #menuDivLargeSize {
+        display: none;
+    }
+
+    #menuDivMinSize {
+        display: flex;
+        height: 50vh;
+        width: 100%;
+    }
+
     #entetePart1 {
         width: 80%;
         font-size: 10px;
@@ -275,7 +278,6 @@ p {
         height: 80vh;
         width: 100%;
         text-align: center;
-        background-color: blue;
     }
 
     #sousPresentation1 {
@@ -288,12 +290,7 @@ p {
         width: 100%;
     }
 
-    #menuDiv {
-        height: 50vh;
-        width: 100%;
-    }
-
-    #sousMenuResponsive1 {
+    #sousMenuMinSizeResponsive {
         flex-direction: column;
         height: 100%;
         width: 100%;
@@ -304,12 +301,12 @@ p {
         width: 100%;
     }
 
-    #menu1,
-    #menu2,
-    #menu3,
-    #menu4,
-    #menu5,
-    #menu6 {
+    #menu1MinSize,
+    #menu2MinSize,
+    #menu3MinSize,
+    #menu4MinSize,
+    #menu5MinSize,
+    #menu6MinSize {
         border: 3px solid rgb(89, 89, 89);
         border-radius: 50px;
         margin: 10%;
@@ -318,33 +315,37 @@ p {
         transition: all 0.5s;
     }
 
-    #menu1:hover #titreDiv,
-    #menu2:hover #titreDiv,
-    #menu3:hover #titreDiv,
-    #menu4:hover #titreDiv,
-    #menu5:hover #titreDiv,
-    #menu6:hover #titreDiv {
+    #menu1MinSize:hover #titreDivMinSize,
+    #menu2MinSize:hover #titreDivMinSize,
+    #menu3MinSize:hover #titreDivMinSize,
+    #menu4MinSize:hover #titreDivMinSize,
+    #menu5MinSize:hover #titreDivMinSize,
+    #menu6MinSize:hover #titreDivMinSize {
         color: white;
         transition: all 0.5s;
     }
 
-    #menu1:hover,
-    #menu2:hover,
-    #menu3:hover,
-    #menu4:hover,
-    #menu5:hover,
-    #menu6:hover {
+    #menu1MinSize:hover,
+    #menu2MinSize:hover,
+    #menu3MinSize:hover,
+    #menu4MinSize:hover,
+    #menu5MinSize:hover,
+    #menu6MinSize:hover {
         background-color: rgb(89, 89, 89);
         color: rgb(203, 203, 203);
         transition: all 0.5s;
     }
 
-    #menu1:hover #menu1Cache,
-    #menu2:hover #menu2Cache,
-    #menu3:hover #menu3Cache,
-    #menu4:hover #menu4Cache,
-    #menu5:hover #menu5Cache,
-    #menu6:hover #menu6Cache {
-    display: none;
-}
+    #menu1LargeSize:hover #menu1Cache,
+    #menu2LargeSize:hover #menu2Cache,
+    #menu3LargeSize:hover #menu3Cache,
+    #menu4LargeSize:hover #menu4Cache,
+    #menu5LargeSize:hover #menu5Cache,
+    #menu6LargeSize:hover #menu6Cache {
+        display: none;
+    }
+
+    #buttonMenuLink1 {
+        
+    }
 }
