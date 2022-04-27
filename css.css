@@ -23,9 +23,17 @@ h1 {
     padding-left: 5%;
 }
 
-p {
+p{
     padding-left: 5%;
     padding-right: 2.5%;
+    list-style-type: none;
+}
+
+li {
+    padding-left: 3%;
+    padding-right: 2.5%;
+    padding-bottom: 0.5em;
+    list-style-type: none;
 }
 
 #entete {
@@ -96,6 +104,18 @@ p {
     border-top: 2px solid rgb(110, 110, 110);
     border-right: 1px solid rgb(110, 110, 110);
     border-bottom: 2px solid rgb(110, 110, 110);
+    position: relative;
+}
+
+#sousPresentation1 p { 
+    position: absolute;
+    top: 26%;
+    left: 23%;
+    width: 100%;
+    height: 50%;
+    color: #09468b;
+    font-size: 6.5em;
+    text-shadow: white 3px 3px;
 }
 
 #sousPresentation2 {
@@ -202,6 +222,12 @@ p {
     padding: 0px;
 }
 
+#titleHideMenus {
+    font-size:1.5em;
+    color: rgb(45, 45, 45);
+    text-decoration: underline;
+}
+
 #menu1LargeSize:hover #menu1Cache,
 #menu2LargeSize:hover #menu2Cache,
 #menu3LargeSize:hover #menu3Cache,
@@ -285,7 +311,7 @@ p {
 
 #paragrapheMenuCache p {
     padding-top: 1em;
-    padding-right: 1em;
+    padding-right: 2em;
 }
 
 #basDePage {
